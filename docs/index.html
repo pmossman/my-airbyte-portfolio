@@ -147,7 +147,7 @@
     </section>
 
     <!-- Methodology Modal -->
-    <div class="methodology-modal" id="methodologyModal">
+    <div class="methodology-modal" id="methodologyModal" style="display:none;">
       <div class="methodology-modal-content">
         <button class="methodology-close" id="methodologyClose">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -391,28 +391,27 @@
     const methodologyModal = document.getElementById('methodologyModal');
     const methodologyClose = document.getElementById('methodologyClose');
 
-    methodologyToggle.addEventListener('click', () => {
+    function openModal() {
+      methodologyModal.style.display = 'flex';
       methodologyModal.classList.add('open');
       document.body.style.overflow = 'hidden';
-    });
+    }
 
-    methodologyClose.addEventListener('click', () => {
+    function closeModal() {
       methodologyModal.classList.remove('open');
       document.body.style.overflow = '';
-    });
+      setTimeout(() => { methodologyModal.style.display = 'none'; }, 200);
+    }
+
+    methodologyToggle.addEventListener('click', openModal);
+    methodologyClose.addEventListener('click', closeModal);
 
     methodologyModal.addEventListener('click', (e) => {
-      if (e.target === methodologyModal) {
-        methodologyModal.classList.remove('open');
-        document.body.style.overflow = '';
-      }
+      if (e.target === methodologyModal) closeModal();
     });
 
     document.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape' && methodologyModal.classList.contains('open')) {
-        methodologyModal.classList.remove('open');
-        document.body.style.overflow = '';
-      }
+      if (e.key === 'Escape' && methodologyModal.classList.contains('open')) closeModal();
     });
   </script>
 
