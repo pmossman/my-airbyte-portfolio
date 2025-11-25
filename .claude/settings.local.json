@@ -1,0 +1,30 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(for domain in api cicd config temporal permissions workspace database connectors testing connections refactoring dataplane jobs secrets kubernetes analytics)",
+      "Bash(do cp _template.html \"$domain.html\")",
+      "Bash(done)",
+      "Bash(curl:*)",
+      "Bash(for commit in e4f94d20c1 e9be1e7095 6ecbdcab81 9966400f1d 0242eb6c1a 1d75edc40d 56d17e3e4f 8d2a7a3be8 73025db96c)",
+      "Bash(do echo \"=== COMMIT: $commit ===\" git show $commit --stat)",
+      "Bash(for project in domain-verification dataplane-health-monitoring sso-test-validate secrets-architecture grace-period-workflow connection-auto-disable orb-subscription-integration stripe-webhook-consolidation organization-payment-config permission-hierarchy cron-scheduling-fix first-user-admin-flow temporal-cloud-migration workspace-permission-filtering)",
+      "Bash(do cp _template.html \"$project.html\")",
+      "Bash(lsof:*)",
+      "Bash(for:*)",
+      "Bash(do sed -i '' 's|../../projects/|../projects/|g' \"$f\")",
+      "Bash(do cp _template.html \"$file\")",
+      "Bash(do)",
+      "Bash(if ! git cat-file -t \"$hash\")",
+      "Bash(then)",
+      "Bash(echo:*)",
+      "Bash(fi)",
+      "Bash(git cat-file:*)",
+      "Bash(find:*)",
+      "Bash(do cp _template.html \"$proj.html\")",
+      "Bash(git init:*)",
+      "Bash(git add:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
