@@ -22,7 +22,14 @@
       "Bash(find:*)",
       "Bash(do cp _template.html \"$proj.html\")",
       "Bash(git init:*)",
-      "Bash(git add:*)"
+      "Bash(git add:*)",
+      "Bash(git commit -m \"$(cat <<''EOF''\nInitial commit: Parker Mossman Airbyte portfolio website\n\n- Portfolio website showcasing 4 years of contributions to Airbyte platform\n- 22 project deep-dives spanning 2022-2025\n- 18 technical domain analyses\n- Visual Gantt-style project timeline\n- Searchable/filterable project and domain listings\n- Responsive dark-themed design\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>\nEOF\n)\")",
+      "Bash(gh auth:*)",
+      "Bash(git remote add:*)",
+      "Bash(git push:*)",
+      "Bash(git remote remove:*)",
+      "Bash(git mv:*)",
+      "Bash(git commit:*)"
     ],
     "deny": [],
     "ask": []
