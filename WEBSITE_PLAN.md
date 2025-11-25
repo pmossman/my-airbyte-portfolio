@@ -62,7 +62,7 @@ A professional portfolio website showcasing ~4 years of engineering contribution
 #### Hero Section
 - Name: Parker Mossman
 - Title: "Senior Backend Engineer"
-- Tagline: "3.9 years building enterprise data infrastructure at Airbyte"
+- Tagline: "4 years building enterprise data infrastructure at Airbyte"
 - Key stats displayed prominently:
   - 379 commits
   - 19 technical domains

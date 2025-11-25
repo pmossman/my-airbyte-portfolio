@@ -4,7 +4,7 @@
 **GitHub Username:** pmossman
 **Total Commits:** 379
 **Date Range:** December 20, 2021 - November 14, 2025
-**Duration:** ~3.9 years
+**Duration:** ~4 years
 
 ---
 
